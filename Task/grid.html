@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .parent {
+      border: 1px solid black;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: 25% 50% 25%;
+    }
+    .child1 {
+      border: 1px solid black;
+      background-color: red;
+      grid-column: 1/3;
+    }
+    .child2 {
+      border: 1px solid black;
+      background-color: green;
+    }
+    .child3 {
+      border: 1px solid black;
+      background-color: yellow;
+    }
+    .child4 {
+      border: 1px solid black;
+      background-color: skyblue;
+      grid-column: 1/3;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="child1">One</div>
+      <div class="child2">Two</div>
+      <div class="child3">Three</div>
+      <div class="child4">Four</div>
+    </div>
+  </body>
+</html>
