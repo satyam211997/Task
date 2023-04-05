@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //             Write a function to print Fibonacci series until number 👎
+
+  //   exmple1) n= 45
+  //   output:- [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+  //   exmple2) n= 96
+  //   output:- [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+  //   exmple3) n= 184
+  //   output:- [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
+
+  //   exmple4) n= 5
+  //   output:- [ 0, 1, 1, 2, 3, 5]
+
+  //   Note:- Fibonacci series is a series that generates subsequent series of numbers by the addition of the two previous numbers. The first two terms of the Fibonacci series are zero and one, respectively. And the next terms are the addition of the two previous terms
+
+  // const fib = (N) => {
+  //   const arr = [0, 1];
+  //   for (let i = 2; i <= N; i++) {
+  //     arr.push(arr[i - 2] + arr[i - 1]);
+  //   }
+  //   return arr;
+  // };
+  // console.log(fib(10));
+
+  const Fibonacci = (N) => {
+    let arr = [0, 1];
+    let output;
+    let count = 0;
+    for (let i = 0; i <= count; i++) {
+      output = arr[i] + arr[i + 1];
+      arr.push(output);
+      count++;
+
+      if (N === output) {
+        return arr;
+      }
+    }
+  };
+
+  console.log(Fibonacci(55));
+</script>

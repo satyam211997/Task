@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17, 20, 31, 35, 66];
+  n = 35;
+  function binary(arr, n) {
+    let Start = 0;
+    let End = arr.length - 1;
+    while (Start <= End) {
+      let middle = parseInt((Start + End) / 2);
+      if (arr[middle] === n) {
+        return middle;
+      }
+      if (arr[middle] > n) {
+        End = middle - 1;
+      } else {
+        Start = middle + 1;
+      }
+    }
+    return "n is not Found";
+  }
+  console.log(binary(arr, n));
+</script>
